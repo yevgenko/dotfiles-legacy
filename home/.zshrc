@@ -31,6 +31,9 @@ source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
 
 # Customize to your needs...
+# Color listing
+eval $(dircolors ~/.dircolors)
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
 alias df='df -h'
 alias du='du -s * -h'
