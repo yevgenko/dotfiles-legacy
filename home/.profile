@@ -89,6 +89,3 @@ export PLAY_HOME="/home/wik/Tools/play-1.2.3"
 if [ -d $PLAY_HOME ] ; then
     PATH="$PLAY_HOME:$PATH"
 fi
-
-# 256color support
-export TERM="xterm-256color"
