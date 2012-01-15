@@ -57,3 +57,6 @@ alias pbpaste='xsel --clipboard --output'
 
 # Load Pythonbrew into a shell session
 [[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
+
+# Node version manager
+export N_PREFIX="$HOME/.local"
