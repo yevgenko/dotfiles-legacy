@@ -33,7 +33,7 @@ unsetopt correct_all
 
 # Customize to your needs...
 # Color listing
-eval $(dircolors ~/.dircolors)
+# eval $(dircolors ~/.dircolors)
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
 alias df='df -h'
