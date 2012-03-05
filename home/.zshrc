@@ -1,5 +1,5 @@
-# 256color support
-export TERM="xterm-256color"
+# tmux 256color support
+alias tmux="TERM=screen-256color-bce tmux"
 
 # Path to your oh-my-zsh configuration.
 export ZSH=$HOME/.oh-my-zsh
@@ -7,7 +7,8 @@ export ZSH=$HOME/.oh-my-zsh
 # Set to the name theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # export ZSH_THEME="yeevgen"
-export ZSH_THEME="yeevgen-min"
+# export ZSH_THEME="yeevgen-min"
+export ZSH_THEME="gentoo2"
 
 # Default editor
 export EDITOR="vim"
@@ -19,7 +20,7 @@ export DISABLE_AUTO_TITLE="true"
 # export CASE_SENSITIVE="true"
 
 # Comment this out to disable weekly auto-update checks
-export DISABLE_AUTO_UPDATE="true"
+# export DISABLE_AUTO_UPDATE="true"
 
 # Uncomment following line if you want to disable colors in ls
 # export DISABLE_LS_COLORS="true"
@@ -33,7 +34,7 @@ unsetopt correct_all
 
 # Customize to your needs...
 # Color listing
-# eval $(dircolors ~/.dircolors)
+eval $(dircolors ~/.dircolors)
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
 alias df='df -h'
