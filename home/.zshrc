@@ -1,5 +1,6 @@
 # tmux 256color support
 alias tmux="TERM=screen-256color-bce tmux"
+alias mux="TERM=screen-256color-bce mux"
 
 # Path to your oh-my-zsh configuration.
 export ZSH=$HOME/.oh-my-zsh
