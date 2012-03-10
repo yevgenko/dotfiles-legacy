@@ -48,8 +48,8 @@ alias grep='grep --color=auto'
 alias ack='ack-grep'
 
 # command line clipboard
-alias pbcopy='xsel --clipboard --input'
-alias pbpaste='xsel --clipboard --output'
+alias pbcopy='xclip -i -sel clipboard'
+alias pbpaste='xclip -o -sel clipboard'
 
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
