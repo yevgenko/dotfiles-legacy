@@ -62,3 +62,6 @@ alias pbpaste='xclip -o -sel clipboard'
 
 # Node version manager
 export N_PREFIX="$HOME/.local"
+
+# GitHub knowledge for git
+function git(){hub "$@"}
