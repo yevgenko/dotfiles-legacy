@@ -28,7 +28,7 @@ export DISABLE_AUTO_TITLE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git github ruby rails3 bundler cap mvn command-not-found)
 
 source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
@@ -51,9 +51,6 @@ alias ack='ack-grep'
 alias pbcopy='xclip -i -sel clipboard'
 alias pbpaste='xclip -o -sel clipboard'
 
-# Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
 # Load tmuxinator into a shell session
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
@@ -67,5 +64,9 @@ export N_PREFIX="$HOME/.local"
 function git(){hub "$@"}
 
 # Android SDK
-export ANDROID_HOME="$HOME/Tools/android-sdk-linux"
+export ANDROID_HOME="$HOME/Tools/adt-bundle-linux/sdk"
 
+# gibo (gitignore-boilerplates) completion
+[[ -s $HOME/.gibo-completion.zsh ]] && source $HOME/.gibo-completion.zsh
+
+function gvim () { (/usr/bin/gvim -f "$@" &) }
